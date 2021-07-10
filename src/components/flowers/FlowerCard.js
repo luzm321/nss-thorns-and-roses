@@ -1,5 +1,5 @@
-import React from 'react'
-import './Flower.css'
+import React from 'react';
+import './Flower.css';
 
 export const FlowerCard = ({flower})=> (
 	<>
