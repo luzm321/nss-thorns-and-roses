@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "./nav/NavBar.js";
-import { ApplicationViews } from "./ApplicationsViews.js";
+import { ApplicationViews } from "./ApplicationViews.js";
 import "./ThornsAndRoses.css";
 
 

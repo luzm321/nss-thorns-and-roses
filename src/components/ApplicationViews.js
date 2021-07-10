@@ -1,10 +1,14 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { Home } from "./Home.js";
-import { FlowerProvider } from "./components/flowers/FlowerProvider.js";
-import { FlowerList } from "./components/flowers/FlowerList.js";
-import { NurseryProvider } from "./components/nurseries/NurseryProvider.js";
-import { NurseryList } from "./components/nurseries/NurseryList.js";
+import { FlowerProvider } from "./flowers/FlowerProvider.js";
+import { FlowerList } from "./flowers/FlowerList.js";
+import { NurseryProvider } from "./nurseries/NurseryProvider.js";
+import { NurseryList } from "./nurseries/NurseryList.js";
+import { DistributorProvider } from "./distributors/DistributorProvider.js";
+import { DistributorList } from "./distributors/DistributorList.js";
+import { RetailerProvider } from "./retailers/RetailerProvider.js";
+import { RetailerList } from "./retailers/RetailerList.js";
 
 export const ApplicationViews = () => {
     return (
@@ -25,7 +29,7 @@ export const ApplicationViews = () => {
                 </Route>
             </NurseryProvider>
 
-            {/* <DistributorProvider>
+            <DistributorProvider>
                 <Route exact path="/distributors">
                     <DistributorList />
                 </Route>
@@ -35,7 +39,7 @@ export const ApplicationViews = () => {
                 <Route exact path="/retailers">
                     <RetailerList />
                 </Route>
-            </RetailerProvider> */}
+            </RetailerProvider>
         </>
     );
 };
